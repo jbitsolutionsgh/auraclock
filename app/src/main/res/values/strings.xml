@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AuraClock</string>
+    <string name="screensaver_name">AuraClock OLED Saver</string>
+    <string name="widget_name">AuraClock Glance</string>
+    <string name="widget_description">Interactive watchOS style clock with date and quick actions.</string>
+    <string name="alarm_channel_name">Alarms</string>
+    <string name="alarm_channel_desc">Sound and visual alerts for your scheduled alarms</string>
+    <string name="earbud_service_channel">Earbud Control Service</string>
+    <string name="earbud_service_desc">Keeps earbud time announcement and media controls active</string>
+</resources>

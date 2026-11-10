@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_bg"
+    android:orientation="vertical"
+    android:padding="14dp">
+
+    <!-- Top Bar: Date & Status -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/widget_date_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"
+            android:text="MON, NOV 9"
+            android:textAllCaps="true"
+            android:textColor="#38BDF8"
+            android:textSize="12sp"
+            android:letterSpacing="0.08" />
+
+        <TextView
+            android:id="@+id/widget_alarm_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/widget_chip_bg"
+            android:paddingStart="8dp"
+            android:paddingTop="3dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="3dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="⏰ 07:00 AM"
+            android:textColor="#F59E0B"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <!-- Center: Analogue Watch Face + Digital Time Row -->
+    <LinearLayout
+        android:id="@+id/widget_clock_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp">
+
+        <ImageView
+            android:id="@+id/widget_analog_face"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:contentDescription="Analog Watch Face"
+            android:scaleType="fitCenter" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="14dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextClock
+                android:id="@+id/widget_text_clock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:format12Hour="hh:mm"
+                android:format24Hour="HH:mm"
+                android:textColor="#F0F6FC"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/widget_seconds_or_motto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="ANALOG WATCHFACE"
+                android:textColor="#8B949E"
+                android:textSize="11sp"
+                android:letterSpacing="0.08" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Bottom Actions Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/widget_btn_speak"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/widget_chip_bg"
+            android:text="🔊 Speak Time"
+            android:textAllCaps="false"
+            android:textColor="#E6EDF3"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/widget_btn_nightstand"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/widget_chip_bg"
+            android:text="🌙 Nightstand"
+            android:textAllCaps="false"
+            android:textColor="#38BDF8"
+            android:textSize="11sp" />
+    </LinearLayout>
+</LinearLayout>
