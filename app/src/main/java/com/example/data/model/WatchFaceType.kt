@@ -22,6 +22,8 @@ enum class WatchFaceType(
     COCKPIT_YELLOW("Cockpit 24H Yellow", "High Contrast Flieger"),
     TITANIUM_RED_CHRONO("Titanium Red Chrono", "Industrial Machined Bezel"),
     MODERN_PODS_SPORTS("Modern Pods Sports", "Multi-Telemetry Gauges"),
+    NIKE_SPORT("Nike Vapor Sport", "Radial Activity Rings"),
+    RADIAL_TELEMETRY("Radial Telemetry", "Aerospace Chronometer"),
 
     CALIFORNIA("California", "Roman-Arabic Classic"),
     CHRONOGRAPH_PRO("Chronograph Pro", "Tri-Compax Precision"),

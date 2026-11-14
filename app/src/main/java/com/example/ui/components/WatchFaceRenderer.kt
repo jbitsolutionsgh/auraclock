@@ -37,6 +37,8 @@ import com.example.ui.components.faces.OrangeTacticalDiverFace
 import com.example.ui.components.faces.CockpitYellowFace
 import com.example.ui.components.faces.TitaniumRedChronoFace
 import com.example.ui.components.faces.ModernPodsSportsFace
+import com.example.ui.components.faces.NikeSportFace
+import com.example.ui.components.faces.RadialTelemetryFace
 import kotlin.math.cos
 import kotlin.math.min
 import kotlin.math.sin
@@ -72,6 +74,8 @@ fun WatchFaceRenderer(
             WatchFaceType.COCKPIT_YELLOW -> CockpitYellowFace(calendar, theme, showSeconds)
             WatchFaceType.TITANIUM_RED_CHRONO -> TitaniumRedChronoFace(calendar, theme, showSeconds)
             WatchFaceType.MODERN_PODS_SPORTS -> ModernPodsSportsFace(calendar, theme, showSeconds)
+            WatchFaceType.NIKE_SPORT -> NikeSportFace(calendar, theme, showSeconds)
+            WatchFaceType.RADIAL_TELEMETRY -> RadialTelemetryFace(calendar, theme, showSeconds)
 
             WatchFaceType.CALIFORNIA -> CaliforniaFace(calendar, theme, showSeconds)
             WatchFaceType.CHRONOGRAPH_PRO -> ChronographProFace(calendar, theme, showSeconds)

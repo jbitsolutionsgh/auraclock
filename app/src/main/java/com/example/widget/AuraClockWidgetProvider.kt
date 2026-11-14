@@ -164,6 +164,8 @@ class AuraClockWidgetProvider : AppWidgetProvider() {
                 WatchFaceType.COCKPIT_YELLOW -> R.drawable.face_cockpit_yellow
                 WatchFaceType.TITANIUM_RED_CHRONO -> R.drawable.face_titanium_red
                 WatchFaceType.MODERN_PODS_SPORTS -> R.drawable.face_sports_pods
+                WatchFaceType.NIKE_SPORT -> R.drawable.face_nike_sport
+                WatchFaceType.RADIAL_TELEMETRY -> R.drawable.face_radial_telemetry
                 else -> null
             }
 
